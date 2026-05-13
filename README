@@ -1,11 +1,15 @@
 ﻿Matchmove Software
 ==================
 
-This is the module responsible for implementing the Matchmove routines. 
-The outputs of this module are inputs for the module s3d-ptrace.
+This software implements a Matchmove using OpenMP and Ceres-Solver. 
+It is prepared to be a fast version replacement of the matchmove module at https://github.com/visgraf/vfx
 
-The code is part of the book: "Introduction to Visual Effects: A Computational Approach"
-by Bruno Madeira and Luiz Velho.
+
+REQUIREMENTS
+------------
+1) Install Ceres Solver ( https://github.com/ceres-solver/ceres-solver )
+2) Install the requirements of https://github.com/visgraf/vfx as explained
+
 
 CONTENTS
 --------
@@ -52,22 +56,29 @@ d1: This script executes the tracking, pose estimation and relaxation processing
 necessaries for producing a global optimal and robust matchmove result of the 
 video ./matchmove/data/video.mp4. As the output, it produces the file 
 ./matchmove/demo/cam_refined.txt.
-This software implements the code of the Sections: 6.7, 7.16 and 7.17 of the book.  
 
 d2: This script captures the 3D coordinates of 3 points defined by theirs 
-projections over some frames. More preciselly, it rurns the program presented
- in the Section 8.3 of the book. As the result, it produces the outputfile
-  ./matchmove/demo/points3d.txt.  These points are used by the module 
-  ./s3d-ptrace to specify the geometry of the polygon that projects the shadows
-  of synthetic objects. The user must do steps like these:
+projections over some frames. As the result, it produces the outputfile
+  ./matchmove/demo/points3d.txt. After doing this the video will be played superimposed
+by the 3D triangle specified by the user. 
+After runing d2.sh it will be presented a graphical interface and you must 
+follow this instruction:
 
-  Repeat the steps 1 to 3 some times and press esc: 
-    1) select 3 points over the table
-    2) press space bar
-    3) move the slider bar to another frame.
-  Note: select the always the same points over the 3d table in the same order.
-  
-  
+Repeat the steps 1 to 3 two or more times and press aafter that press esc: 
+   1) select 3 points over the table
+   2) press space bar
+   3) move the slider bar to another frame.
+Note: select the always the same points over the 3d table in the same order.
+
+If the these points are used in the software https://github.com/visgraf/vfx they will
+be used by the module ./s3d-ptrace to specify the geometry of the polygon that 
+projects the shadows of synthetic objects. The user must do steps like these:
+
+
+THE FOLLOWING DEMOS ARE ONLY USED IF YOU REPLACE THE MATCHMOVE SOFTWARE OF
+https://github.com/visgraf/vfx 
+==============================================================================
+
 d3: This script firstly capures coordinates of six 3D points over some frames of 
 the video ./matchmove/data/video.mp4. This coordinates are used to estimate the
 3D coordinate of them. In the case of our demo, we selected the 6 points presented
@@ -102,4 +113,4 @@ REQUIREMENTS
 The software needs the following development tools  sh, make, gcc and g++. It uses
  the library GSL.
 
-Copyright 2022 - Bruno Madeira & Luiz Velho
+Copyright 2026 - Bruno Madeira 
