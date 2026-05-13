@@ -8,7 +8,7 @@ It is prepared to be a fast version replacement of the matchmove module at https
 REQUIREMENTS
 ------------
 1) Install Ceres Solver ( https://github.com/ceres-solver/ceres-solver )
-2) Install the requirements of https://github.com/visgraf/vfx as explained
+2) Install the requirements of https://github.com/visgraf/vfx as explained there
 
 
 CONTENTS
