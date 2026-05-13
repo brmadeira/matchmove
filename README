@@ -59,16 +59,16 @@ video ./matchmove/data/video.mp4. As the output, it produces the file
 
 d2: This script captures the 3D coordinates of 3 points defined by theirs 
 projections over some frames. As the result, it produces the outputfile
-  ./matchmove/demo/points3d.txt. After doing this the video will be played superimposed
-by the 3D triangle specified by the user. 
+  ./matchmove/demo/points3d.txt. After doing this the video will be played 
+superimposed by the 3D triangle specified by the user. 
 After runing d2.sh it will be presented a graphical interface and you must 
 follow this instruction:
 
-Repeat the steps 1 to 3 two or more times and press aafter that press esc: 
-   1) select 3 points over the table
-   2) press space bar
-   3) move the slider bar to another frame.
-Note: select the always the same points over the 3d table in the same order.
+Repeat the steps 1 to 3 two or more times and press ESC after that: 
+  Step 1) select 3 points over the frame pressing the mouse button (they will be numbered)
+  Step 2) press space bar
+  Step 3) move the slider bar to another frame.
+Note: Select always the same points over all the frames in the same order.
 
 If the these points are used in the software https://github.com/visgraf/vfx they will
 be used by the module ./s3d-ptrace to specify the geometry of the polygon that 
