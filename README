@@ -70,7 +70,7 @@ Repeat the steps 1 to 3 two or more times and press ESC after that:
   Step 3) move the slider bar to another frame.
 Note: Select always the same points over all the frames in the same order.
 
-If the these points are used in the software https://github.com/visgraf/vfx they will
+If these points are used in the software https://github.com/visgraf/vfx they will
 be used by the module ./s3d-ptrace to specify the geometry of the polygon that 
 projects the shadows of synthetic objects. The user must do steps like these:
 
