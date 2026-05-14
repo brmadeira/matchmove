@@ -72,7 +72,7 @@ Note: Select always the same points over all the frames in the same order.
 
 If these points are used in the software https://github.com/visgraf/vfx they will
 be used by the module ./s3d-ptrace to specify the geometry of the polygon that 
-projects the shadows of synthetic objects. The user must do steps like these:
+projects the shadows of synthetic objects.
 
 
 THE FOLLOWING DEMOS ARE ONLY USED IF YOU REPLACE THE MATCHMOVE SOFTWARE OF
